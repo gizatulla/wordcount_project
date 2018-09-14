@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is Homepage!</title>
+
+</head>
+<body>
+
+    <h1>WORD COUNT!!!</h1>
+    <img src="https://scontent-syd2-1.xx.fbcdn.net/v/t1.0-9/33045286_10113070186787784_1561546183501938688_o.jpg?_nc_cat=0&oh=73656adc288aff50d9ade1ef0131da17&oe=5C2A3502" width="600" height="400">
+
+    <br><a href="{% url 'about' %}">About this website</a>
+
+
+
+
+    <form action="{% url 'count' %}" method="get">
+
+        <h3>Enter your text below</h3>
+
+        <textarea cols="40" rows="6" name="fulltext"></textarea>
+        <br><input type="submit" value="Count!" />
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is Count FILE!</title>
+</head>
+<body>
+
+<h1>There are {{count}} words in your text</h1>
+<a href="/"><< Start Again</a>
+<h1>Your Text:</h1>
+<p>{{ fulltext }}</p>
+
+{% for word, wcount in wordd  %}
+
+<p>{{word}} ====> {{wcount}}</p>
+
+{% endfor %}
+
+</body>
+</html>
